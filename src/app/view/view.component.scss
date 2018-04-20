@@ -1,0 +1,110 @@
+@import "./../../assets/scss/styles";
+
+.view {
+  figure {
+    background: #bc4e9c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    margin: 0px;
+    img {
+      width: 100%;
+    }
+    figcaption {
+      padding: 10px;
+      h2 {
+        margin: 10px 0px;
+        font-size: 24px;
+        line-height: 35px;
+        color: $white;
+        font-weight: normal;
+      }
+      small {
+        font-size: 16px;
+        color: $white;
+      }
+      ul {
+        padding: 0px;
+        margin: 0px;
+        li {
+          list-style: none;
+          display: inline-block;
+          margin: 5px 0px;
+          i{
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  .info {
+    margin: 0px;
+    font-size: 14px;
+    color: $primary-text-color;
+    line-height: 24px;
+    padding: 10px;
+  }
+
+  .actions{
+    margin: 0px;
+    padding: 0px;
+    background: $white;
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+    li{
+      display: inline-block;
+      float: left;
+      width: 50%;
+      text-align: center;
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        height: 60%;
+        width: 1px;
+        top: 20%;
+        right: 0px;
+        background: $divider-color;
+      }
+
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+
+      &.active {
+        border-bottom: 2px solid $theme-color;
+      }
+
+      a{
+        padding: 15px 15px;
+        color: $primary-text-color;
+        display: block;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .steps {
+    background: $white;
+    ol {
+      margin: 0px;
+      padding-top: 10px;
+      li {
+        line-height: 24px;
+        font-size: 14px;
+        color: $primary-text-color;
+        padding: 10px;
+        &:last-child{
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}

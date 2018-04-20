@@ -1,0 +1,45 @@
+@import "./../../assets/scss/styles";
+
+.layout {
+
+  z-index: 5;
+  nav {
+    background: $white;
+    z-index: 1;
+    height: 56px;
+    padding: 4px 0px;
+    border-bottom: 1px solid $light-gray;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    a {
+      height: 48px;
+      width: 48px;
+      text-align: center;
+
+      &.right {
+        float: right;
+      }
+
+      i {
+        font-size: 20px;
+        padding: 15px;
+      }
+      display: inline-block;
+      color: $theme-color;
+    }
+    a.brand {
+      display: inline-block;
+      color: $primary-text-color;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+}
+
+.content {
+  margin-top: 56px;
+}
+.footer {
+
+}

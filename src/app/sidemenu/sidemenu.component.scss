@@ -1,0 +1,70 @@
+@import "../../assets/scss/styles";
+aside{
+  position: fixed;
+  background: rgba($black, .8);
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  z-index: 2;
+  overflow: hidden;
+  .close{
+    width: 20%;
+    height: 100%;
+    background: transparent;
+    float: right;
+    cursor: pointer;
+  }
+  >div{
+    margin: 0px;
+    width: 80%;
+    background: $white;
+    height: 100%;
+    white-space: nowrap;
+    .banner{
+      height: 150px;
+      width: 100.1%;
+      padding: 15px 20px;
+
+      background: #bc4e9c;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+      display: grid;
+      align-items: end;
+      h2{
+        margin: 0px;
+        color: $white;
+        font-weight: normal;
+      }
+    }
+
+    ul {
+      margin: 10px 0px;
+      padding: 0px;
+      li{
+        list-style: none;
+
+        &.active {
+          a{
+            color: $theme-color;
+          }
+        }
+        a{
+          i{
+            width: 30px;
+            text-align: center;
+            margin-right: 10px;
+          }
+          display: block;
+          font-size: 17px;
+          padding: 15px 20px;
+        }
+      }
+
+      li + li {
+        border-top: 1px solid $light-gray ;
+      }
+    }
+  }
+}

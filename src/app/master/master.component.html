@@ -1,0 +1,16 @@
+<section class="layout">
+  <nav>
+    <a (click)="menu = !menu"><i class="fa fa-bars"></i></a>
+    <a class="right"><i class="fa fa-search"></i></a>
+    <a class="brand">Savjikitchen</a>
+  </nav>
+</section>
+
+<section class="content">
+  <app-sidemenu [hidden]="!menu" (close)="onClose($event)"></app-sidemenu>
+  <router-outlet></router-outlet>
+</section>
+
+<section class="footer">
+
+</section>
