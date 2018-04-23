@@ -6,8 +6,11 @@
   min-height: 100vh;
   background: $white;
   .banner {
-    padding: 30px;
+    padding: 15px;
     text-align: center;
+    figure{
+      margin: 0px;
+    }
   }
   .signin {
     ul {

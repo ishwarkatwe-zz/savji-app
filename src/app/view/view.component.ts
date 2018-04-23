@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-view',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
+    console.log(this.getAverageRGB('cover'));
+  }
+
+  getAverageRGB(imgEl) {
+
+   return '';
   }
 
 }

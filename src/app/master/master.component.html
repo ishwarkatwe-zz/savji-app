@@ -7,7 +7,7 @@
 </section>
 
 <section class="content">
-  <app-sidemenu [hidden]="!menu" (close)="onClose($event)"></app-sidemenu>
+  <app-sidemenu [show]="menu" (close)="onClose($event)"></app-sidemenu>
   <router-outlet></router-outlet>
 </section>
 

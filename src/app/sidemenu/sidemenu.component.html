@@ -1,15 +1,16 @@
-<aside>
-  <div class="close" (click)="onClose()"></div>
+<aside [ngStyle]="{'width':(show?'100%':'0%')}">
+  <div class="close" [ngStyle]="{'background':(show?'rgba(0, 0, 0, 0.5)':'transparent')}" (click)="onClose()"></div>
   <div>
     <div class="banner">
       <h2>Hi, Ishwar</h2>
     </div>
     <ul>
-      <li class="active"><a><i class="fa fa-user"></i> Profile</a></li>
-      <li><a><i class="fa fa-list-alt"></i> My Recipes</a></li>
-      <li><a><i class="fa fa-heart"></i> Liked Recipes</a></li>
-      <li><a><i class="fa fa-sign-out"></i> Logout</a></li>
+      <li routerLinkActive="active"><a routerLink="/dashboard"><i class="fa fa-home"></i> Home</a></li>
+      <li routerLinkActive="active"><a routerLink="/my-recipes"><i class="fa fa-list-alt"></i> My Recipes</a></li>
+      <li routerLinkActive="active"><a routerLink="/liked-recipes"><i class="fa fa-heart"></i> Liked Recipes</a></li>
+      <li routerLinkActive="active"><a routerLink="/catagories"><i class="fa fa-spoon"></i> Categories</a></li>
+      <li routerLinkActive="active"><a routerLink="/profile"><i class="fa fa-user"></i> Profile</a></li>
+      <li routerLinkActive="active"><a routerLink="/logout"><i class="fa fa-sign-out"></i> Logout</a></li>
     </ul>
   </div>
-
 </aside>

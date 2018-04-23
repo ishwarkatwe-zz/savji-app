@@ -7,6 +7,7 @@ import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 })
 export class SidemenuComponent implements OnInit {
 
+  @Input() show:boolean;
   @Output() close =  new EventEmitter();
 
 

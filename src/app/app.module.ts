@@ -10,6 +10,9 @@ import { MasterComponent } from './master/master.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ViewComponent } from './view/view.component';
 import { SidemenuComponent } from './sidemenu/sidemenu.component';
+import { CatagoriesComponent } from './catagories/catagories.component';
+import { ProfileComponent } from './profile/profile.component';
+import { RecipesComponent } from './recipes/recipes.component';
 
 const appRoutes: Routes = [
   {path: '', redirectTo: 'landing', pathMatch: 'full'},
@@ -29,10 +32,45 @@ const appRoutes: Routes = [
         }
       },
       {
+        path: 'catagories',
+        component: CatagoriesComponent,
+        data: {
+          pageId: '#CatagoriesComponent'
+        }
+      },
+      {
+        path: 'profile',
+        component: ProfileComponent,
+        data: {
+          pageId: '#ProfileComponent'
+        }
+      },
+      {
+        path: 'my-recipes',
+        component: RecipesComponent,
+        data: {
+          pageId: '#RecipesComponent#my'
+        }
+      },
+      {
+        path: 'liked-recipes',
+        component: RecipesComponent,
+        data: {
+          pageId: '#RecipesComponent#liked'
+        }
+      },
+      {
         path: 'view',
         component: ViewComponent,
         data: {
           pageId: '#ViewComponent'
+        }
+      },
+      {
+        path: 'logout',
+        component: LandingComponent,
+        data: {
+          pageId: '#LandingComponent#logout'
         }
       }
     ],
@@ -49,6 +87,9 @@ const appRoutes: Routes = [
     DashboardComponent,
     ViewComponent,
     SidemenuComponent,
+    CatagoriesComponent,
+    ProfileComponent,
+    RecipesComponent,
   ],
   imports: [
     RouterModule.forRoot(

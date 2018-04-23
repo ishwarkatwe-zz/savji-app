@@ -15,7 +15,6 @@ export class DashboardComponent implements OnInit {
   }
 
   view() {
-    alert('asa');
     this._router.navigate(['view']);
   }
 }
