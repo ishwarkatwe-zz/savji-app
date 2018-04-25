@@ -13,6 +13,7 @@ import { SidemenuComponent } from './sidemenu/sidemenu.component';
 import { CatagoriesComponent } from './catagories/catagories.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RecipesComponent } from './recipes/recipes.component';
+import { AutosuggestComponent } from './autosuggest/autosuggest.component';
 
 const appRoutes: Routes = [
   {path: '', redirectTo: 'landing', pathMatch: 'full'},
@@ -90,6 +91,7 @@ const appRoutes: Routes = [
     CatagoriesComponent,
     ProfileComponent,
     RecipesComponent,
+    AutosuggestComponent,
   ],
   imports: [
     RouterModule.forRoot(

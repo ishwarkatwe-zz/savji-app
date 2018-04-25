@@ -1,7 +1,20 @@
 @import "./../../assets/scss/styles";
 
+.avatar {
+  background: $theme-color;
+  padding: 30px;
+  margin: 0px;
+  text-align: center;
+  img{
+    width: 100px;
+  }
+}
+
 .signin {
   padding: 10px;
+
+
+
   input {
     height: 50px;
     width: 100%;

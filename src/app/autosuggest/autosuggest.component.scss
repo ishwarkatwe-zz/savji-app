@@ -1,0 +1,69 @@
+@import "../../assets/scss/styles";
+.autosuggest{
+  position: fixed;
+  padding: 10px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: $white;
+  z-index: 2;
+
+  .form-control{
+    position: relative;
+    input {
+      height: 50px;
+      width: 100%;
+      margin: 5px 0px;
+      border: none;
+      background: #f2f2f2;
+      padding: 0px 15px;
+      font-size: 14px;
+    }
+    a.close{
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      margin: 5px 0px;
+      cursor: pointer;
+      i{
+        height: 50px;
+        line-height: 50px;
+        font-size: 18px;
+        color: $secondary-text-color;
+        width: 50px;
+        text-align: center;
+      }
+    }
+  }
+
+  .result{
+    h2{
+      font-size: 13px;
+      color: $primary-text-color;
+      margin: 10px 0px;
+    }
+
+    ul{
+      margin: 0px;
+      padding: 0px;
+      li{
+        list-style: none;
+        &:hover{
+          background: $light-gray;
+        }
+
+        a{
+          display: block;
+          padding: 10px 5px;
+          font-size: 14px;
+        }
+      }
+
+      li+li{
+        border-top: 1px solid $light-gray;
+      }
+    }
+  }
+
+}

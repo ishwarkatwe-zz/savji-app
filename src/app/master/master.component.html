@@ -1,11 +1,11 @@
 <section class="layout">
   <nav>
     <a (click)="menu = !menu"><i class="fa fa-bars"></i></a>
-    <a class="right"><i class="fa fa-search"></i></a>
+    <a class="right" (click)="search=!search"><i class="fa fa-search"></i></a>
     <a class="brand">Savjikitchen</a>
   </nav>
 </section>
-
+<app-autosuggest *ngIf="search" (close)="onSearchClose($event)"></app-autosuggest>
 <section class="content">
   <app-sidemenu [show]="menu" (close)="onClose($event)"></app-sidemenu>
   <router-outlet></router-outlet>

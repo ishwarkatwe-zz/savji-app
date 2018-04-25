@@ -8,6 +8,7 @@ import {Router, ActivatedRoute, Params, NavigationEnd} from '@angular/router';
 })
 export class MasterComponent implements OnInit, OnDestroy {
   menu: boolean;
+  search: boolean;
   strPageId: string;
 
   //Sub
@@ -33,6 +34,10 @@ export class MasterComponent implements OnInit, OnDestroy {
 
   onClose(e) {
     this.menu = false;
+  }
+
+  onSearchClose(e) {
+    this.search = false;
   }
 
 
